@@ -1,0 +1,30 @@
+[project]
+name = "reversible-backend"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "dhrupad", email = "thedhrupad@gmail.com"},
+]
+dependencies = [
+    "fastapi>=0.115.5",
+    "python-dotenv>=0.0.5", # Changed from dotenv to python-dotenv which is the correct package name
+    "supabase>=2.10.0", 
+    "cdp-sdk>=0.11.0",
+    "pydantic>=2.5.2",
+    "requests>=2.31.0",
+    "uvicorn>=0.30.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.scripts]
+dev = "uvicorn src.reversible_backend.main:app --reload"
+start = "uvicorn src.reversible_backend.main:app"
+
+[tool.pdm]
+distribution = true

@@ -1,0 +1,5 @@
+import os
+
+class Env:
+    COINBASE_API_KEY_NAME = os.getenv("COINBASE_API_KEY_NAME")
+    COINBASE_API_KEY_SECRET = os.getenv("COINBASE_API_KEY_SECRET")

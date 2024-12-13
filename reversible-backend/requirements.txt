@@ -1,0 +1,11 @@
+fastapi>=0.115.5
+python-dotenv>=0.0.5
+supabase>=2.10.0
+cdp-sdk>=0.11.0
+pydantic>=2.5.2
+requests>=2.31.0
+uvicorn>=0.30.0
+langchain-openai
+cdp-langchain
+langgraph
+langchain-core
